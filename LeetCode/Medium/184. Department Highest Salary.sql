@@ -1,4 +1,4 @@
-# Version 1
+-- Version 1
 select department, employee, salary
 from (
     select b.name department, a.name employee, salary,
@@ -8,7 +8,7 @@ from (
 where rk = 1
 
 
-# Version 2
+-- Version 2
 select b.name department, a.name employee, salary
 from employee a
     left join department b on a.departmentid = b.id
