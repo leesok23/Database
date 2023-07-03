@@ -1,0 +1,2 @@
+select sum(weekday(submit_date)>4) as weekend_cnt, sum(weekday(submit_date)<=4) as working_cnt
+from tasks
