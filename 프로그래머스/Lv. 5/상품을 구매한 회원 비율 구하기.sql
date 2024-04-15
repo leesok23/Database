@@ -1,4 +1,4 @@
-# Version 1
+-- Version 1
 select
     date_format(b.sales_date, '%Y') as year,
     date_format(b.sales_date, '%m') as month,
@@ -9,8 +9,8 @@ from user_info a
 group by 1, 2
 order by 1, 2
 
-
-# Version 2
+    
+-- Version 2
 select
     year(sales_date) as year
     , month(sales_date) as month
