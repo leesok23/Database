@@ -15,4 +15,4 @@ from (
     inner join used_goods_file b on a.board_id = b.board_id
 where 1=1
     and a.rnk = 1
-order by 1 desc
+order by b.file_id desc
